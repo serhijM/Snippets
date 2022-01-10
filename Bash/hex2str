@@ -1,0 +1,5 @@
+# input is hex string like 6c69676874 -> light
+str=$1
+for (( i=0; i<${#str}; i+=2 )); do
+  printf "\x"${str:$i:2}
+done

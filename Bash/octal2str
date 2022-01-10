@@ -1,0 +1,5 @@
+#!/bin/bash
+
+# input is string of octal chars separated by space:  154 151 155 145 -> lime
+str=$(echo ' '$1 | tr ' ' '\\')
+printf $str
